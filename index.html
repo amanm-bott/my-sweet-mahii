@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Chocolate Day 🍫</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* background */
+body{
+    background:
+    radial-gradient(circle at top,#4a1f08,#140702 70%);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* floating chocolates */
+.choco{
+    position:fixed;
+    top:-40px;
+    width:22px;
+    height:22px;
+    background:linear-gradient(135deg,#5c2a10,#b87a3b);
+    border-radius:6px;
+    animation:fall 10s linear infinite;
+    opacity:.7;
+    z-index:-1;
+}
+
+@keyframes fall{
+    from{transform:translateY(-60px) rotate(0deg);}
+    to{transform:translateY(110vh) rotate(360deg);}
+}
+
+/* sections */
+section{
+    min-height:100vh;
+    padding:90px 10%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:60px;
+}
+
+/* hero */
+.hero h1{
+    font-size:64px;
+    color:#ffcf9c;
+}
+
+.hero p{
+    font-size:20px;
+    margin-top:20px;
+    max-width:520px;
+    line-height:1.8;
+    color:#ffe8d1;
+}
+
+.hero .art{
+    font-size:190px;
+    text-align:center;
+    opacity:.9;
+}
+
+/* story */
+.story h2{
+    font-size:48px;
+    color:#ffd2a3;
+}
+
+.story p{
+    font-size:19px;
+    margin-top:15px;
+    line-height:1.9;
+    color:#ffe6cc;
+}
+
+/* propose block */
+.propose{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.propose h2{
+    font-size:52px;
+    color:#ffddb7;
+}
+
+.propose p{
+    max-width:700px;
+    margin:20px auto;
+    font-size:20px;
+    line-height:1.9;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+.buttons a{
+    display:inline-block;
+    padding:14px 34px;
+    border-radius:40px;
+    margin:10px;
+    text-decoration:none;
+    font-weight:600;
+    font-size:18px;
+    transition:.3s;
+}
+
+.yes{
+    background:#c67b2f;
+    color:#2a0f03;
+}
+
+.no{
+    border:2px solid #c67b2f;
+    color:#ffd9b0;
+}
+
+.yes:hover{
+    transform:scale(1.1);
+}
+
+.no:hover{
+    background:#c67b2f;
+    color:#2a0f03;
+}
+
+/* last section */
+.final{
+    background:linear-gradient(180deg,#2a1205,#140702);
+}
+
+.final h2{
+    font-size:52px;
+    color:#ffd7b0;
+}
+
+.final p{
+    margin-top:18px;
+    font-size:20px;
+    line-height:1.8;
+    color:#ffe5cc;
+}
+
+/* scroll button */
+.scroll{
+    margin-top:35px;
+    display:inline-block;
+    color:#ffd6aa;
+    font-size:18px;
+    text-decoration:none;
+    border-bottom:2px solid #ffd6aa;
+}
+
+/* responsive */
+@media(max-width:900px){
+    section{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero .art{
+        font-size:140px;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- background chocolates -->
+<div class="choco" style="left:5%;animation-delay:0s"></div>
+<div class="choco" style="left:15%;animation-delay:2s"></div>
+<div class="choco" style="left:30%;animation-delay:4s"></div>
+<div class="choco" style="left:45%;animation-delay:1s"></div>
+<div class="choco" style="left:60%;animation-delay:3s"></div>
+<div class="choco" style="left:75%;animation-delay:5s"></div>
+<div class="choco" style="left:90%;animation-delay:6s"></div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div>
+        <h1>Happy Chocolate Day 🍫</h1>
+        <p>
+            On this sweet day, I just want to remind you how special you are to me.
+            Every moment with you tastes sweeter than my favourite chocolate.
+        </p>
+
+        <a class="scroll" href="#story">Scroll for my message ↓</a>
+    </div>
+
+    <div class="art">
+        🧸🍫
+    </div>
+
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+
+    <div>
+        <h2>My Sweetest Story 💝</h2>
+        <p>
+            I never believed that one person could change my whole world,
+            until you came into my life.
+            Your smile melts my stress, your voice melts my heart.
+        </p>
+    </div>
+
+    <div>
+        <h2>Why You Are My Chocolate 🍫</h2>
+        <p>
+            Because you make bad days better,
+            good days perfect,
+            and every small moment unforgettable.
+        </p>
+    </div>
+
+</section>
+
+<!-- PROPOSE -->
+<section class="propose" id="propose">
+
+    <h2>One Sweet Question For You 🍫</h2>
+    <p>
+        I don't need expensive gifts,
+        I only need your hand in mine and your heart with mine.
+        Will you stay with me and make life sweet together?
+    </p>
+
+    <div class="buttons">
+        <a href="#final" class="yes">Yes, always ❤️</a>
+        <a href="#story" class="no">Let me read again 🙈</a>
+    </div>
+
+</section>
+
+<!-- FINAL -->
+<section class="final" id="final">
+
+    <div>
+        <h2>Thank You My Sweetheart 💕</h2>
+        <p>
+            Happy Chocolate Day, my love.
+            I promise to always make you smile,
+            protect your heart and walk with you forever.
+        </p>
+    </div>
+
+    <div style="font-size:160px;text-align:center;opacity:.8">
+        🧸🍫
+    </div>
+
+</section>
+
+</body>
+</html>
